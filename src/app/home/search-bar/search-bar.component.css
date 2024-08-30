@@ -1,0 +1,10 @@
+.custom {
+    display: flex; 
+    justify-content: center;     /* Centers content horizontally */
+    gap: 1rem;    
+    overflow: hidden;      /* Ensures content doesn't overflow the rounded corners */
+    padding: 10px;        
+}
+
+/* border: 2px solid red; 
+border-radius: 10px; */

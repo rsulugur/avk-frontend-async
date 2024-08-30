@@ -1,0 +1,10 @@
+<div class="custom">
+  <input type="text" pInputText [(ngModel)]="searchQuery" placeholder="Search..." id="search-input">
+  <!-- <button pButton type="button" label="Search" icon="pi pi-search" (click)="onSearch()"></button> -->
+  <button *ngIf="!apiService.isLoading()" pButton type="button" label="search" class="p-button-info" icon="pi pi-search"
+    (click)="onSearch()"></button>
+  <button *ngIf="apiService.isLoading()" pButton type="button" label="searching..." icon="pi pi-search"
+    (click)="onSearch()" class="p-button-success" [disabled]="apiService.isLoading()">
+
+  </button>
+</div>

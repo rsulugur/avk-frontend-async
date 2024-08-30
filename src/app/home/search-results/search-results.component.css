@@ -1,0 +1,10 @@
+.rounded-square {
+    border-radius: 10px; 
+    overflow: hidden; 
+    width: 40px; 
+    object-fit: cover;
+}
+
+.p-datatable .p-datatable-tbody > tr > td {
+    padding: 0 !important;
+}

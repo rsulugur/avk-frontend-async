@@ -1,0 +1,4 @@
+.centered-table {
+    margin: 0 auto; /* Center horizontally */
+    max-width: 70%; /* Limit the max width */
+}

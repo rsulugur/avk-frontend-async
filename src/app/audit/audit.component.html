@@ -1,0 +1,28 @@
+<div class="card centered-table" *ngIf="items().length == 0">
+    <p-messages [(value)]="messages" [enableService]="false" closable="false"> </p-messages>
+</div>
+
+<div *ngIf="items().length > 0" class="centered-table">
+    <p-table [value]="items()" responsiveLayout="scroll">
+        <ng-template pTemplate="header">
+            <tr>
+                <th>ID</th>
+                <th>Search Query</th>
+                <th>Created Date</th>
+                <th>Suggestions</th>
+                <th>Total Count</th>
+                <th>Time Taken</th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-item let-i="rowIndex">
+            <tr>
+                <td>{{ i + 1 }}</td>
+                <td>{{ item.userQuery }}</td>
+                <td>{{ item.createdDate | date:'dd MMM yyyy, HH:mm:ss'}}</td>
+                <td>{{ item.suggestedProducts.join(',') }}</td>
+                <td>{{ item.totalRecords }} products</td>
+                <td>{{ item.timeTaken }} seconds</td>
+            </tr>
+        </ng-template>
+    </p-table>
+</div>

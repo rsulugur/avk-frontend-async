@@ -1,0 +1,9 @@
+.centered-table {
+    max-width: 70%; /* Limit the max width */
+    margin: 10px auto;
+}
+
+::ng-deep .p-datatable .p-datatable-thead > tr > th {
+    background: #98baff;
+    color: black;
+}
