@@ -30,6 +30,6 @@ Backend URL is set in home.service.ts file
 
 ## Frontend Screen
 
-![Screen One](public\image_one.png)
+![Screen One](./public/image_one.png)
 
-![Screen Two](public\image_two.png)
+![Screen Two](./public/image_two.png)
